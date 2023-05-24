@@ -4,6 +4,9 @@ on:
  
   push:
     branches: [ main ]
+defaults:
+  run:
+    working-directory: ./api
 
 jobs:
   
@@ -32,7 +35,7 @@ jobs:
     - name: Build and tag Docker image
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: ./api
         file: ./Dockerfile
         push: true
         tags: 673380487826.dkr.ecr.eu-west-1.amazonaws.com/kc-main-micro:latest

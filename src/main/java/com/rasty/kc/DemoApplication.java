@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.rasty.kc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

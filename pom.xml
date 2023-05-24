@@ -8,11 +8,11 @@
 		<version>2.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>eksdemo</artifactId>
+	<groupId>com.kc</groupId>
+	<artifactId>kcmainmicro</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot on EKS</description>
+	<name>kcmainmicro</name>
+	<description>Demo kcmainmicro for Spring Boot on EKS</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

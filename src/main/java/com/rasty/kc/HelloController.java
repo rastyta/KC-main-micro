@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.rasty.kc;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,12 +8,12 @@ public class HelloController {
 
 	@GetMapping("/")
 	public String index() {
-		return "Hello World!";
+		return "Hello Rasty from main-micro!";
 	}
 
     @GetMapping("/name")
 	public String getName() {
-		return "Vinod here !!";
+		return "main-micro here !!";
 	}
 
 }

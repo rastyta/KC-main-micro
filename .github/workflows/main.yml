@@ -38,9 +38,9 @@ jobs:
         tags: 673380487826.dkr.ecr.eu-west-1.amazonaws.com/KC-main-micro:latest
 
     - name: Get the Docker image digest
-      id: image-digest
+      id: get-image-digest
       run: echo "::set-output name=digest::$(docker inspect --format='{{index .RepoDigests 0}}' 673380487826.dkr.ecr.eu-west-1.amazonaws.com/KC-main-micro:latest)"
 
     - name: Store Docker image digest
-      id: image-digest
+      id: store-image-digest
       run: echo "DOCKER_IMAGE_DIGEST=${{ steps.image-digest.outputs.digest }}" >> $GITHUB_ENV

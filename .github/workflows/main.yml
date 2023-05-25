@@ -5,6 +5,9 @@ on:
   push:
     branches: [ main ]
 
+env:
+  ECR_REPOSITORY: kc-main-micro
+
 jobs:
 
   build:
@@ -41,7 +44,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ vars.ECR_REGISTRY }}/kc-main-micro:latest
+          tags: ${{ vars.ECR_REGISTRY }}/$DAY_OF_WEEK:latest
 
       - name: Get the Docker image digest
         id: get-image-digest

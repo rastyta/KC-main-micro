@@ -35,9 +35,6 @@ jobs:
       - name: Build with Maven
         run: mvn clean package -DskipTests
 
-      - name: List contents of target directory
-        run: ls -l
-
       - name: Build and tag Docker image
         uses: docker/build-push-action@v2
         with:

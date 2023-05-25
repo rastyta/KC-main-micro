@@ -41,7 +41,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: 673380487826.dkr.ecr.eu-west-1.amazonaws.com/kc-main-micro:latest
+          tags: ${{ env.ECR_REGISTRY }}/kc-main-micro:latest
 
       - name: Get the Docker image digest
         id: get-image-digest

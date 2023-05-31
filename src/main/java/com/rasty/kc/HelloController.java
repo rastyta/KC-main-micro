@@ -8,12 +8,12 @@ public class HelloController {
 
 	@GetMapping("/")
 	public String index() {
-		return "Hello Rasty from main-micro!";
+		return "Hello Rasty from main-micro! **";
 	}
 
     @GetMapping("/name")
 	public String getName() {
-		return "main-micro here !!";
+		return "main-micro here !! **";
 	}
 
 }

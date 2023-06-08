@@ -15,6 +15,7 @@ public class kcMainController {
     @GetMapping("/requestDemomicro")
     public ResponseEntity<String> makeRequestToApp2() {
         String demomicroUrl = discoveryClient.getInstances("demomicro-service").get(0).getUri().toString();
+        System.out.println("********************** url: " + demomicroUrl);
         String url = demomicroUrl + "/airlines/airline_10";
 
         RestTemplate restTemplate = new RestTemplate();

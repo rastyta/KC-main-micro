@@ -10,3 +10,6 @@ spring:
       config:
         enabled: true
         name: kcmainmicro
+logging:
+  level:
+    org.springframework.cloud.kubernetes: DEBUG

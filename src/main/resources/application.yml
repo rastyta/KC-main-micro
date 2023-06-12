@@ -12,7 +12,3 @@ spring:
         mode: event
       config:
         name: kcmainmicro
-
-logging:
-  level:
-    org.springframework.cloud.kubernetes: DEBUG

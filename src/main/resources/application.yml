@@ -1,5 +1,11 @@
 spring:
+  application:
+    name: kcmainmicro
   cloud:
     kubernetes:
       discovery:
+        enabled: true
+      reload:
+        enabled: true
+      config:
         enabled: true

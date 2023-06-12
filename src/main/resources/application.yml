@@ -8,7 +8,6 @@ spring:
       reload:
         enabled: true
       config:
-        enabled: true
         name: kcmainmicro
 logging:
   level:

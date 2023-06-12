@@ -7,8 +7,12 @@ spring:
         enabled: true
       reload:
         enabled: true
+        monitoring-config-maps: true
+        strategy: refresh
+        mode: event
       config:
         name: kcmainmicro
+
 logging:
   level:
     org.springframework.cloud.kubernetes: DEBUG
